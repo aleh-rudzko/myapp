@@ -1,0 +1,22 @@
+{
+  "name": "myapp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "unsav <aleh.rudzko@qweeco.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aleh-rudzko/myapp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,7 +1,13 @@
 doctype html
-html
+html(ng-app='app')
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/vendors.js')
+    script(src='/javascripts/dist.js')
   body
     block content
+    div(ng-controller='UsersController')
+      input(ng-model='count')
+      input(type='button', ng-click='increase()', value='inc')
+      input(type='button', ng-click='decrease()', value='dec')
