@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div(ng-controller='UserBaseController')
+    div(ng-controller='UserListController')
+      ul
+        li(ng-repeat='user in users')
+          {{ user.email }}

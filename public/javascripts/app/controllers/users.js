@@ -1,15 +1,13 @@
-app.controller('UsersController', ['$scope', function($scope) {
-  console.log('UsersController');
 
-  $scope.count = 0;
+app.controller('BaseUserController', ['$scope', ($scope) => {
+  console.log('BaseUserController');
+}])
 
-  $scope.increase = function() {
-    console.log('increase');
-    $scope.count += 1;
-  }
+.controller('UserListController', ['$scope', 'UserService', function($scope, UserService) {
+  console.log('UserListController');
+  $scope.users = UserService.query();
+}])
 
-  $scope.decrease = function() {
-    console.log('decrease');
-    $scope.count -= 1;
-  }
+.controller('UserDetailController', ['$scope', ($scope) => {
+  console.log('UserDetailController');
 }])
